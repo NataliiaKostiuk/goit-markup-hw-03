@@ -64,6 +64,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .link-nav:hover,
 .link-nav:focus {
@@ -106,11 +109,6 @@ img {
 }
 .address {
   margin-left: auto;
-}
-.item-nav {
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 /*==== hero==== */
 .hero {
@@ -229,7 +227,7 @@ img {
   gap: 24px;
 }
 .list-team-item {
-  flex-basis: calc((100% -3 * 24px) / 4);
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .team-members {
   padding: 32px 16px;
@@ -272,8 +270,6 @@ img {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   padding: 12px 24px;
-}
-.item-button {
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
