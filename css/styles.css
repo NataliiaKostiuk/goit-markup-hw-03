@@ -10,6 +10,7 @@
   --hover-focus: #404bbf;
   --button-color: #4d5ae5;
   --secondary-background: #f4f4fd;
+  --border-color: #e7e9fc;
 }
 /* =====style none===== */
 .list {
@@ -43,7 +44,7 @@ img {
 }
 /*===== header===== */
 .header {
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--border-color);
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -101,16 +102,14 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: #e7e9fc 1px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  border-bottom: var(--border-color) 1px;
 }
 .address {
   margin-left: auto;
 }
 .item-nav {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 /*==== hero==== */
 .hero {
@@ -190,6 +189,7 @@ img {
 }
 .list-advantages {
   display: flex;
+  gap: 24px;
 }
 .subtitle {
   margin-bottom: 8px;
@@ -204,9 +204,10 @@ img {
 }
 .activity-list {
   display: flex;
+  gap: 24;
 }
 .item-activity {
-  flex-basis: calc((100% - 3 * 16px) / 3);
+  flex-basis: calc((100% - 3 * 24px) / 3);
 }
 .activity {
   padding-bottom: 120px;
@@ -227,7 +228,7 @@ img {
   gap: 24px;
 }
 .list-team-item {
-  flex-basis: calc((100% - 3 * 24px) / 3);
+  flex-basis: calc((100% -3 * 24px) / 4);
 }
 .team-members {
   padding: 32px 16px;
@@ -267,7 +268,7 @@ img {
   letter-spacing: 0.04em;
   color: var(--button-color);
   cursor: pointer;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--border-color);
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 12px 24px;
@@ -281,7 +282,7 @@ img {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .text-portfolio {
   color: var(--primary-color);
@@ -301,6 +302,6 @@ img {
 }
 .category {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--border-color);
   border-top: none;
 }
